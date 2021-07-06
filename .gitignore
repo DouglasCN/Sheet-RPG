@@ -1,0 +1,6 @@
+lib/composer
+lib/smarty
+view/compile
+mestre/view/compile
+composer.lock
+jogador/view/compile

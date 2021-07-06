@@ -1,0 +1,79 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "players monsters"
+}
+
+.main-players {
+    grid-area: players;
+}
+
+.main-monsters {
+    grid-area: monsters;
+}
+
+#content-player-AB,
+#content-player-AI,
+#content-monsters-AB,
+#content-monsters-AI {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+form {
+    display: flex;
+}
+
+input {
+    padding: 0.3rem 1rem;
+    border-bottom: 1px solid var(--dark-12);
+    color: var(--dark-12);
+    transition: all .2s;
+    font-size: 1.25rem;
+    margin-right: 1rem;
+}
+
+input:focus {
+    padding-top: 1rem;
+    transition: all .2s; 
+}
+
+p {
+    display: flex;
+    font-size: 1.25rem;
+    letter-spacing: 0.1rem;
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    text-transform: capitalize;
+}
+
+p span {
+    margin-right: 1rem;
+    width: 14.6rem;
+}
+
+button {
+    width: 1.5rem;
+    align-items: center;
+    display: flex;
+}
+
+button img {
+    width: 100%;
+    cursor: pointer;
+}
