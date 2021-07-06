@@ -7,11 +7,14 @@
     } 
 
     $smarty = new Template();
+    $campaign = new Campaign();
+
+    $campaign->GetSelectCampaign();
+    $smarty->assign('CAMPANHAS', $campaign->GetItens());
+
     $smarty->assign('ROTA_STYLES', Rotas::get_SiteStylesMestre());
     $smarty->assign('ROTA_IMAGES', Rotas::get_SiteImagesMestre());
-    $smarty->assign('ROTA_CAMPANHAS', Rotas::get_SiteMestreCampanhas());
-    $smarty->assign('ROTA_PERSONAGENS', Rotas::get_SiteMestrePersonagens());
-    $smarty->display('home.tpl'); 
+    $smarty->assign('ROTA_SCRIPTS', Rotas::get_SiteScriptsMestre());
 
-    
+    $smarty->display('personagens.tpl'); 
 ?>

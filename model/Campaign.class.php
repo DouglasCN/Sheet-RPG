@@ -22,6 +22,13 @@ class Campaign extends Conexao{
         $this->GetListaJSON();
     }
 
+    function GetSelectCampaign(){
+        $query = "SELECT * FROM campanha WHERE ativo = 0 ";
+    
+        $this->ExecuteSQL($query);
+        $this->GetLista();
+    }
+
     function Insert(){
         $query = "INSERT INTO campanha (titulo, mestre) values ";
         $query .= "(:tite, :master)";
@@ -35,7 +42,7 @@ class Campaign extends Conexao{
     }
 
     function Delete($id){
-        $query = "DELETE FROM campanha WHERE id_Campanha = :id";
+        $query = "UPDATE campanha SET ativo = 1 WHERE id_Campanha = :id";
         
         $params = array(
             ':id' => (int)$id
@@ -49,11 +56,9 @@ class Campaign extends Conexao{
         //eu estou chamando o meu metodo listar dados da classe conexão
         while($lista = $this->ListarDados()):
         $this->itens[$i] = array(
-            'idCampario'=>$lista['id_Campario'],
-            'title' => $lista['title'],
-            'ativo' => $lista['ativo'],
-            'dt_cadastro' =>  date('d/m/Y', strtotime($lista['dt_cadastro'])),
-            'nivelAcesso' => $lista['nivelAcesso']
+            'id_Campanha'=>$lista['id_Campanha'],
+            'titulo' => $lista['titulo'],
+            'mestre' => $lista['mestre']
         );
         $i++;
         endwhile;

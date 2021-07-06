@@ -19,7 +19,7 @@
             <div class="pages">
                 <a href="">Home</a>
                 <a href="{$ROTA_CAMPANHAS}">Campanha</a>
-                <a href="">Personagens</a>
+                <a href="{$ROTA_PERSONAGENS}">Personagens</a>
                 <a href="">Monstros</a>
                 <a href="">Progredir campanha</a>
             </div>

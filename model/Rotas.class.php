@@ -52,6 +52,11 @@ class Rotas {
 		return self::get_SiteMestre() . '/campanha';
 	}
 
+	static function get_SiteMestrePersonagens(){
+		return self::get_SiteMestre() . '/personagens';
+	}
+
+
 	//rotas para paginas dos jogadores
 	static function get_SiteJogador(){
 		return Config::SITE_URL . '/' . Config::SITE_PASTA . '/' . self::$pag_jogador;
