@@ -56,6 +56,13 @@ class Rotas {
 		return self::get_SiteMestre() . '/personagens';
 	}
 
+	static function get_SiteMestreMonstros(){
+		return self::get_SiteMestre() . '/monstros';
+	}
+
+	static function get_SiteMestreMonstro(){
+		return self::get_SiteMestre() . '/monstro';
+	}
 
 	//rotas para paginas dos jogadores
 	static function get_SiteJogador(){

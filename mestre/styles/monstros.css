@@ -1,0 +1,206 @@
+.container {
+    width: 100%;
+}
+
+h2 {
+    font-family: Risque, sans-serif;
+    font-weight: 500;
+}
+
+.button-newMonster {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-newMonster label {
+    background-color: var(--dark-12);
+    color: var(--dark-3);
+    border-radius: 15px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.table-Monster {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.table-Monster table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-Monster table td,
+.table-Monster table th{
+    border-bottom: 1px solid var(--white);
+    padding: 0.5rem 2rem;
+}
+
+.options {
+    display: flex;
+    gap: 1rem;   
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.2s 0.2s ease-in-out;
+    transition: all 0.2s 0.2s ease-in-out;
+    color:var(--dark-3);
+}
+
+.modal-content {
+    padding: 10px;
+    width: 400px;
+    max-height: 85%;
+    overflow: auto;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    z-index: 2;
+    opacity: 0;
+    border-radius: 3px;
+    background: var(--dark-12);;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.modal-container {
+    width: 100%;
+    padding: 1rem;
+}
+
+.modal-container h2{
+    font-family: Risque, sans-serif;
+}
+
+.modal-container .header {
+    width: 100%;
+    text-align: center;
+}
+
+.modal-container .main {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.main label,
+.main input {
+    color: var(--dark-3);
+    width: 100%;
+    letter-spacing: 0.1rem;
+}
+
+.main input {
+    padding: 0.3rem 1rem;
+    border-bottom: 1px solid var(--dark-3);
+    transition: all .5s;
+    font-size: 1.25rem;
+}
+
+input:focus {
+    padding-top: 1rem;
+    transition: all .5s;
+    font-size: 1.5rem;
+}
+
+.modal-container select {
+    border: none;
+    border-bottom: 1px solid var(--dark-3);
+    background: none;
+    width: 100%;
+    padding: 0.3rem 1rem;
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+select:focus-visible {
+    outline: none;
+}
+
+label + input{
+    margin-bottom: 1rem;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.footer .button-quit {
+    border: 1px solid var(--dark-3);
+    border-radius: 1rem;
+    background: var(--dark-12);
+    width: 100px;
+    padding: 0.25rem 1rem;
+    cursor: pointer;
+    color: var(--dark-3);
+}
+
+.footer .button-save {
+    border: 1px solid var(--dark-12);
+    border-radius: 1rem;
+    background: var(--dark-3);
+    width: 100px;
+    padding: 0.25rem 1rem;
+    cursor: pointer;
+    color: var(--dark-12);
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+input[id*="modal"] {
+    position: fixed;
+    left: -9999px;
+    top: 50%;
+    opacity: 0;
+}
+
+input[id*="modal"]:checked + div.modal {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+input[id*="modal"]:checked + div.modal .modal-content {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    -webkit-transition-delay: 0.2s;
+    -ms-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+@media (min-width: 1081px){
+    
+}
+
+@media (max-width: 1080px){
+    
+}
+
+@media (max-width: 720px){
+    
+}

@@ -6,8 +6,8 @@ async function loadingData() {
         .then(response => response.json())
         .then(result => {
             var rows = "";
-            let rota_img = document.getElementById('ROTA_IMAGES').value;
-            let rotaCampanha = document.getElementById('ROTA_CAMPANHA').value;
+            const rota_img = document.getElementById('ROTA_IMAGES').value;
+            const rotaCampanha = document.getElementById('ROTA_CAMPANHA').value;
 
             for (var i = 0; i < result.length; i++) {
                 rows += "<tr>";

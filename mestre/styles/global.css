@@ -69,7 +69,7 @@ a + a {
 }
 
 main {
-    height: 95vh;
+    min-height: 95vh;
     background: var(--dark-3);
     color: var(--dark-12);
     padding: 1rem 10rem;
@@ -106,7 +106,7 @@ main {
     }
 
     main {
-        height: 95vh !important;
+        min-height: 95vh !important;
         background: var(--dark-3);
         padding: 0 2rem !important;
     }

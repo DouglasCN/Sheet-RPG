@@ -7,13 +7,11 @@
     } 
 
     $smarty = new Template();
-    $smarty->assign('ROTA_STYLES', Rotas::get_SiteStylesMestre());
-    $smarty->assign('ROTA_IMAGES', Rotas::get_SiteImagesMestre());
-    $smarty->assign('ROTA_HOME', Rotas::get_SiteMestre());
-    $smarty->assign('ROTA_CAMPANHAS', Rotas::get_SiteMestreCampanhas());
-    $smarty->assign('ROTA_PERSONAGENS', Rotas::get_SiteMestrePersonagens());
-    $smarty->assign('ROTA_MONSTROS', Rotas::get_SiteMestreMonstros());
-    $smarty->display('home.tpl'); 
 
-    
+    $smarty->assign('ROTA_STYLES', Rotas::get_SiteStylesMestre());
+    $smarty->assign('ROTA_SCRIPTS', Rotas::get_SiteScriptsMestre());
+    $smarty->assign('ROTA_IMAGES', Rotas::get_SiteImagesMestre());
+     
+    $smarty->assign('FR', Rotas::$pag[1]);
+    $smarty->display('monstro.tpl'); 
 ?>

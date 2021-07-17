@@ -12,7 +12,7 @@
                 <button><img src="{$ROTA_IMAGES}/add.svg" alt=""></button>
             </form>
             <div id="content-player-AB">
-                <p>teste</p>
+                <p></p>
             </div>
             <h5>Atributos de inteligencia</h5>
             <form onsubmit="return false;" id="form-content-player-AI">
@@ -21,7 +21,7 @@
                 <button><img src="{$ROTA_IMAGES}/add.svg" alt=""></button>
             </form>
             <div id="content-player-AI">
-                <p>teste</p>
+                <p></p>
             </div>
         </div>
 
@@ -34,7 +34,7 @@
                 <button><img src="{$ROTA_IMAGES}/add.svg" alt=""></button>
             </form>
             <div id="content-monsters-AB">
-                <p>teste</p>
+                <p></p>
             </div>
             <h5>Atributos de inteligencia</h5>
             <form onsubmit="return false;" id="form-content-monsters-AI">
@@ -43,7 +43,7 @@
                 <button><img src="{$ROTA_IMAGES}/add.svg" alt=""></button>
             </form>
             <div id="content-monsters-AI">
-                <p>teste</p>
+                <p></p>
             </div>
         </div>
     </div>
